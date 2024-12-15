@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+.products-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.h2 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.skin {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.margin {
+    margin-left: 25px;
+}
+
+.card {
+    width: 340px;
+    min-height: 573px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #5150761A;
+    /* display: flex;*/
+    flex-direction: column;
+    position: relative;
+}
+
+.photo {
+    margin: 25px;
+    margin-bottom: 30px;
+}
