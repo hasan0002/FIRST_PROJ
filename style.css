@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -5,82 +11,88 @@ body {
     color: #515076;
 }
 
-.background_body {
+.container {
+    margin: 0;
+    width: auto;
     background-image: url("images/bg 1.jpg");
     background-size: 790px 697px;
     background-repeat: no-repeat;
     margin-left: 85px;
 }
-
-.body_wh {
-    width: 1280px;
-    height: 1715px;
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 0;
+    text-align: center;
+    color: #515076;
+    padding-left: 217px;
+    padding-right: 217px;
+    padding-top: 220px;
+    padding-bottom: 110px;
 }
 
-.products-list {
-    width: 1110px;
-    height: 1191px;
-    list-style-type: none;
-    margin: 0 auto;
-    margin-top: 110px;
+.clear-list {
+    list-style: none;
+    margin: 0;
     padding: 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 45px;
-    justify-content: center;
 }
 
-.caption-h1 {
-    text-align: center;
-    margin-top: 220px;
-    font-size: 70px;
+
+
+
+
+.card {
+    background-color: #5150761A;
+    padding: 25px;
 }
 
-.h2 {
-    font-size: 20px;
+.card__image {
+    display: block;
+    width: 290px;
+    height: 245px;
+}
+
+.card__category {
+    margin-top: 30px;
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #bcbcbc;
+    text-transform: uppercase;
+}
+
+.card__name{
+    font-style: 20px;
     line-height: 27px;
 }
 
-.skin_ {
-    font-size: 12px;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 116px;
+}
+
+.products__item {
+    width: 340px;
+    height: 573px;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0,0.25);
+}
+
+.card__price{
+    font-size: 20px;
     line-height: 24px;
-    margin-bottom: 300px;
-}
-
-.padding {
-    padding-inline-start: 15px;
-}
-
-.product-card {
-    width: 290px;
-    min-height: 523px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #5150761A;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 10px;
-    padding: 25px;
-
-}
-
-.product-price {
     margin-top: 25px;
-}
-
-.price {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.sum {
-    margin-left: 170px;
+.card__compound{
+    margin-left: -20px;
 }
-
-
-
-/*.photo {
-    margin: 25px;
-    margin-bottom: 30px;
-}*/
